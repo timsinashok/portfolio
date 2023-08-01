@@ -1,0 +1,10 @@
+html {
+    overscroll-behavior: auto;
+    background: var(--color-bg-header);
+}
+
+body {
+  background-image: linear-gradient(to bottom, black, rgb(0, 0, 0));
+  overscroll-behavior: auto;
+  background: var(--color-bg-header);
+}
