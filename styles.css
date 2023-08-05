@@ -1,10 +1,74 @@
 html {
-    overscroll-behavior: auto;
-    background: var(--color-bg-header);
+    overscroll-behavior:auto;
+
 }
 
 body {
-  background-image: linear-gradient(to bottom, black, rgb(0, 0, 0));
-  overscroll-behavior: auto;
-  background: var(--color-bg-header);
+  overscroll-behavior: 2px;
+  background-color: black;
+}
+
+
+
+.name-detail{
+  margin-top: 170px;
+  margin-left: 220px;
+  font-family: "Anybody";
+  left: 100px ;
+  right: 100px;
+  line-height: 1.2;
+}
+
+
+
+.text-one{
+  font-size: 17px;
+  color:  white ;
+}
+
+.name{
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+}
+
+.university{
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.round-logo{
+  background: white;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.custom-button{
+  background-color:#11393B;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration:solid;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.text-two{
+  color: #B57935;
+}
+
+.dark-body-info{
+  margin-top: 10px;
+  margin-left: 220px;
+}
+
+.text-three{
+  color: #577399;
+  margin-top: -163px;
+  margin-left: 1070px;
 }

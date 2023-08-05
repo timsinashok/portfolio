@@ -6,6 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Ashok's portfolio</title>
 
+    <!--Anybody Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anybody:300,400,500,700,900">
     <!--MY own css-->
     <link rel="stylesheet" href="styles.css" />
     <!-- Font Awesome -->
@@ -21,9 +23,12 @@
       .navbar-nav {
           margin-left: auto;
       }
-  </style>
+      body {
+          font-family: "Anybody";
+      }
+     </style>
 </head>
-<body>
+<body style="background-color: black;">
        
   
   
@@ -42,11 +47,10 @@
           background-image: url('bgimage.JPG');
           background-size: cover;
           background-position: center center;
-          f
         }
 
         /* Height for devices larger than 576px */
-        @media (min-width: 992px) {
+        @media (min-width: 900px) {
           #introCarousel {
             margin-top: -58.59px;
           }
@@ -54,7 +58,7 @@
           .carousel-inner,
           .carousel-item,
           .carousel-item.active {
-            height: 50vh;
+            height: 70vh;
           }
         }
 
@@ -93,57 +97,82 @@
 
 
         <!-- Inner -->
-        <div class="carousel-inner" >
+     
           <!-- Single item -->
           <div class="carousel-item active">
-            <div class="mask" style="background-color: rgba(39, 37, 37, 0.6); ">
-              <div class="d-flex justify-content-center align-items-center h-100" style="left: auto;" >
-                <div class="text-white ">
-                  <h1 class="mb-3">Ashok Timsina</h1>
-                  <h3 class="mb-4">Computer Science and Engineering Major</h3>
-                  <h2 class="mb-3">New York University</h2>
-                  <a class="btn btn-outline-light btn-lg m-2"
+            <div class="mask" style="background-color: rgba(39, 37, 37, 0.7); ">
+              
+              <div class="name-detail" >
+                  <h1 class="name">Ashok Timsina</h1>
+                  <br>
+                  <p class="text-one">Computer Science and Engineering Major</p>
+                  <p class="university">  New York University Abu Dhabi </p>
+
+<!--Social Media-->
+                <div class="social-media">
+                    
+               
+                  <a href="facebook.com">
+                      <img class = "round-logo" src="logos/github.png">  &nbsp; 
+                    </a>
+
+                    <a href="facebook.com">
+                      <img class = "round-logo" src="logos/linkedin.png"> &nbsp;
+                    </a>
+
+                    <a href="facebook.com">
+                      <img class = "round-logo" src="logos/twitter.png"> &nbsp;
+                    </a>
+
+                <br><br><br>
+
+                </div>
+
+                  <a class="custom-button"
                     href="https://doc-04-8c-prod-01-apps-viewer.googleusercontent.com/viewer2/prod-01/pdf/o47dn6b1q83tvkij0shfovvnjedtrno4/evfvdibl42jtl8aps9fp131qcu5bcda0/1690771800000/3/100218449208919131371/APznzaY_F1a3JPRnqg40BU6POyHx4N93VzSrAOcC0OvCKxqe7FMMiLDPbDksWe6qurCojMHvhK8XHDG_ISJqelUEJ6QvJ6cosX0PRA1q5lUx6WJfwkHOQRg212PSgUaGvF_bAKCAoQWotmQfW5diXIGFYX-HjmjNRf6TL2Q96dPgpgKKT23xvDPQFMq1Oa5UqZBYi0GAwFYoogBlPeqg4tbRuvac0_3Quigmi4xCse7LAXk8ZMGBInUSGCUbrn8_1WrowjmsaiKxgbBjMGEUidLq4BLVMuHqIu8nS_7tb2Tf3Epx7cSVnbY_jXgOAy6kznJSxw85hAlIV2dwKdbLgCTzXYcJ7akCH8It1ZVI-AOy0rl9_eoHh3z369JlLd4i67Z8Bw5Lf2kO?authuser=0&nonce=h6ddrsavpe4n0&user=100218449208919131371&hash=h67aigs2dapnrhh5mgb1kdvbsm2i7tgs"
                     role="button"
                     rel="nofollow"
                     target="_blank"
-                    style="color: rgb(43, 19, 200);"
                     >View My Resume</a>
-                </div>
+    
               </div>
             </div>
           </div>
     </header>
     <!--Main Navigation-->
-
+<div class="dark-body-info">
     <!--Main layout-->
     <main class="mt-5">
+
       <div class="container">
         <!--Section: Content-->
         <section>
           <div class="row">
             
-            <div class="col-md-6 gx-5 mb-4">
-              <h4><strong>I am Ashok Timsina</strong></h4>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
-                eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
-                sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+            <div class="text-two">
+              <h4><strong>Machine Learning Practitioner</strong></h4>
+            </div>
+            <div class="text-one">
+              <p>
+                I am a self-taught machine learning <br> and AI practitioner interested in <br> robotic software engineering and <br> computer vision.
               </p>
-              <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
-                nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
-                alias, unde optio accusantium soluta, iusto molestiae adipisci et?
-              </p>
+              </div>
             </div>
           </div>
-        </section>
-        <!--Section: Content-->
+      </div>
+      
+      <div class="text-three">
+        <h4><strong>Language and Tools</strong></h4>
+      </div>
 
-        <hr class="my-5" />
+    </section>
+    </main>
 
-        <!--Section: Content-->
+
+<br><br><br><br><br>
+<hr class="my-5" />
+
+<!--Section: Content-->
         <section class="text-center" id="Projects">
           <h4 class="mb-5"><strong>My projects</strong></h4>
 
@@ -158,7 +187,7 @@
                     class="img-fluid"
                   />
                   <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.9);"></div>
                   </a>
                 </div>
               </div>
@@ -208,14 +237,12 @@
           </div>        
         </section>
         <!--Section: Content-->
-
-       
+      
         <!--Section: Content-->
       </div>
+    </div>
     </main>
     <!--Main layout-->
-
-
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
