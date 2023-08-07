@@ -68,13 +68,48 @@ body {
 }
 
 .text-three{
+position: relative;
   color: #577399;
-  margin-top: -163px;
+  margin-top: calc(var(--vh, 1vh));
   margin-left: 1070px;
 }
 
+/* for demo purposes */
+  .card-img-overlay {
+	transform: translateY(13rem);
+	transition: transform 0.18s ease-in;
+	background-color: black;
+  }
+  .card-img-overlay .card-text {
+	opacity: 0;
+	transform: translateY(-6rem);
+	transition: opacity 0.05s ease-in, transform 0.25s ease-in;
+  }
+  .card-img-overlay .btn {
+	opacity: 0;
+	transform: translateY(2rem);
+  }
+  
+  .card {
+	overflow: hidden;
+	background-color: #345;
+  }
+  .card:hover .card-img {
+	mix-blend-mode: overlay;
+  }
+  .card:hover .card-img-overlay {
+	transform: translateY(0);
+	transition: transform 0.25s ease-out;
+	background-color: rgba(0, 0, 0, 0.1);
 
-
-
-
-
+  }
+  .card:hover .card-text {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 0.5s ease-out, transform 0.2s ease-out;
+  }
+  .card:hover .btn {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 0.7s ease-out, transform 0.35s ease-out;
+  }
