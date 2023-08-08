@@ -10,7 +10,9 @@ Feel free to suggest me if you have any suggestions for improving my portfolio w
 ## Requirements
 
 [Anybody Font](https://fonts.google.com/specimen/Anybody)
+
 [MDB Half-page Carousel template](https://mdbootstrap.com/freebies/carousel-half-cover/)
+
 [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
 
