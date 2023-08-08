@@ -75,6 +75,7 @@ position: relative;
 }
 
 /* for demo purposes */
+  
   .card-img-overlay {
 	transform: translateY(13rem);
 	transition: transform 0.18s ease-in;
@@ -95,12 +96,13 @@ position: relative;
 	background-color: #345;
   }
   .card:hover .card-img {
-	mix-blend-mode: overlay;
+	mix-blend-mode: darken;
+
   }
   .card:hover .card-img-overlay {
 	transform: translateY(0);
 	transition: transform 0.25s ease-out;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.7);
 
   }
   .card:hover .card-text {
@@ -113,3 +115,5 @@ position: relative;
 	transform: translateX(0);
 	transition: opacity 0.7s ease-out, transform 0.35s ease-out;
   }
+
+
