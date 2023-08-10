@@ -1,251 +1,202 @@
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ashok's portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashok's portfolio</title>
+  <!--Anybody Font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anybody:300,400,500,700,900">
+  <!--MY own css-->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style>
+    .navbar-nav {
+      margin-left: auto;
+    }
 
-    <!--Anybody Font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anybody:300,400,500,700,900">
-    <!--MY own css-->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css" />
-
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <style>
-      .navbar-nav {
-          margin-left: auto;
-      }
-      body {
-          font-family: "Anybody";
-      }
-     </style>
+    body {
+      font-family: "Anybody";
+    }
+  </style>
 </head>
 <body style="background-color: black;">
-       
-  
-  
   <!--Main Navigation-->
-    <header>
-      <style>
-        /* Carousel styling */
+  <header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('images/bgimage.JPG');
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 900px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+
         #introCarousel,
         .carousel-inner,
         .carousel-item,
         .carousel-item.active {
-          height: 100vh;
+          height: 70vh;
         }
+      }
 
-        .carousel-item:nth-child(1) {
-          background-image: url('images/bgimage.JPG');
-          background-size: cover;
-          background-position: center center;
-        }
-
-        /* Height for devices larger than 576px */
-        @media (min-width: 900px) {
-          #introCarousel {
-            margin-top: -58.59px;
-          }
-          #introCarousel,
-          .carousel-inner,
-          .carousel-item,
-          .carousel-item.active {
-            height: 70vh;
-          }
-        }
-
-        .navbar .nav-link {
-          color: #fff !important;
-        }
-      </style>
-
-
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-        <div class="container-fluid">
-          <!-- Navbar brand -->
-          <a class="navbar-brand nav-link" target="_blank" href="timsinaashok.com.np">
-            <strong>TIMSINASHOK</strong>
-          </a>
-          <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#intro">Home</a>
-              </li>
-              <li class="nav-item">
-                <a  class="nav-link" href="#Projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Contact-Form" target="_blank">Contact Me</a>
-              </li>
-            </ul>
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="timsinaashok.com.np">
+          <strong>TIMSINASHOK</strong>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact-Form" target="_blank">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Inner -->
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="mask" style="background-image: radial-gradient(eclipse, #0000, #0019); background-color: rgba(39, 37, 37, 0.7);">
+          <div class="name-detail">
+            <h1 class="name">Ashok Timsina</h1>
+            <br>
+            <p class="text-one">Computer Science and Engineering Major</p>
+            <p class="university"> New York University Abu Dhabi </p>
+            <!--Social Media-->
+            <div class="social-media">
+              <a href="https://github.com/timsinashok">
+                <img class="round-logo" src="logos/github.png"> &nbsp; </a>
+              <a href="https://www.linkedin.com/in/ashok-timsina/">
+                <img class="round-logo" src="logos/linkedin.png"> &nbsp; </a>
+              <a href="https://twitter.com/timsinashok">
+                <img class="round-logo" src="logos/twitter.png"> &nbsp; </a>
+              <br>
+              <br>
+              <br>
+            </div>
+            <a class="custom-button" href="https://doc-04-8c-prod-01-apps-viewer.googleusercontent.com/viewer2/prod-01/pdf/o47dn6b1q83tvkij0shfovvnjedtrno4/evfvdibl42jtl8aps9fp131qcu5bcda0/1690771800000/3/100218449208919131371/APznzaY_F1a3JPRnqg40BU6POyHx4N93VzSrAOcC0OvCKxqe7FMMiLDPbDksWe6qurCojMHvhK8XHDG_ISJqelUEJ6QvJ6cosX0PRA1q5lUx6WJfwkHOQRg212PSgUaGvF_bAKCAoQWotmQfW5diXIGFYX-HjmjNRf6TL2Q96dPgpgKKT23xvDPQFMq1Oa5UqZBYi0GAwFYoogBlPeqg4tbRuvac0_3Quigmi4xCse7LAXk8ZMGBInUSGCUbrn8_1WrowjmsaiKxgbBjMGEUidLq4BLVMuHqIu8nS_7tb2Tf3Epx7cSVnbY_jXgOAy6kznJSxw85hAlIV2dwKdbLgCTzXYcJ7akCH8It1ZVI-AOy0rl9_eoHh3z369JlLd4i67Z8Bw5Lf2kO?authuser=0&nonce=h6ddrsavpe4n0&user=100218449208919131371&hash=h67aigs2dapnrhh5mgb1kdvbsm2i7tgs" role="button" rel="nofollow" target="_blank">View My Resume</a>
           </div>
         </div>
-      </nav>
-      <!-- Navbar -->
-      
-
-      <!-- Carousel wrapper -->
-      <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
-
-
-        <!-- Inner -->
-     
-          <!-- Single item -->
-          <div class="carousel-item active">
-            <div class="mask" style="background-image: radial-gradient(eclipse, #0000, #0019); background-color: rgba(39, 37, 37, 0.7);">
-              
-              <div class="name-detail" >
-                  <h1 class="name">Ashok Timsina</h1>
-                  <br>
-                  <p class="text-one">Computer Science and Engineering Major</p>
-                  <p class="university">  New York University Abu Dhabi </p>
-
-<!--Social Media-->
-                <div class="social-media">
-                    
-               
-                  <a href="https://github.com/timsinashok">
-                      <img class = "round-logo" src="logos/github.png">  &nbsp; 
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/ashok-timsina/">
-                      <img class = "round-logo" src="logos/linkedin.png"> &nbsp;
-                    </a>
-
-                    <a href="https://twitter.com/timsinashok">
-                      <img class = "round-logo" src="logos/twitter.png"> &nbsp;
-                    </a>
-
-                <br><br><br>
-
-                </div>
-
-                  <a class="custom-button"
-                    href="https://doc-04-8c-prod-01-apps-viewer.googleusercontent.com/viewer2/prod-01/pdf/o47dn6b1q83tvkij0shfovvnjedtrno4/evfvdibl42jtl8aps9fp131qcu5bcda0/1690771800000/3/100218449208919131371/APznzaY_F1a3JPRnqg40BU6POyHx4N93VzSrAOcC0OvCKxqe7FMMiLDPbDksWe6qurCojMHvhK8XHDG_ISJqelUEJ6QvJ6cosX0PRA1q5lUx6WJfwkHOQRg212PSgUaGvF_bAKCAoQWotmQfW5diXIGFYX-HjmjNRf6TL2Q96dPgpgKKT23xvDPQFMq1Oa5UqZBYi0GAwFYoogBlPeqg4tbRuvac0_3Quigmi4xCse7LAXk8ZMGBInUSGCUbrn8_1WrowjmsaiKxgbBjMGEUidLq4BLVMuHqIu8nS_7tb2Tf3Epx7cSVnbY_jXgOAy6kznJSxw85hAlIV2dwKdbLgCTzXYcJ7akCH8It1ZVI-AOy0rl9_eoHh3z369JlLd4i67Z8Bw5Lf2kO?authuser=0&nonce=h6ddrsavpe4n0&user=100218449208919131371&hash=h67aigs2dapnrhh5mgb1kdvbsm2i7tgs"
-                    role="button"
-                    rel="nofollow"
-                    target="_blank"
-                    >View My Resume</a>
-    
-              </div>
-            </div>
-          </div>
-    </header>
-    <!--Main Navigation-->
-<div class="dark-body-info">
+      </div>
+  </header>
+  <!--Main Navigation-->
+  <div class="dark-body-info">
     <!--Main layout-->
     <main class="mt-5">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="text-two">
+            <h4>
+              <strong>Machine Learning Practitioner</strong>
+            </h4>
+          </div>
+          <div class="text-one">
+            <p> I am a self-taught machine learning <br> and AI practitioner interested in <br> robotic software engineering and <br> computer vision. </p>
+          </div>
+        </div>
+  </div>
 
-    
-        <!--Section: Content-->
-        <section>
-          <div class="row">
-            
-            <div class="text-two">
-              <h4><strong>Machine Learning Practitioner</strong></h4>
-            </div>
-            <div class="text-one">
-              <p>
-                I am a self-taught machine learning <br> and AI practitioner interested in <br> robotic software engineering and <br> computer vision.
-              </p>
-              </div>
+  </section>
+  <hr class="my-5" />
+  <!--Section: Content-->
+  <section class="text-center" id="Projects">
+    <h4 class="text-two" style="color: white;">
+      <strong>
+        <br> My Projects and Experiences </strong>
+    </h4>
+  </section>
+  <!-- First Row-->
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-10 mb-4">
+        <div class="card">
+          <div class="card text-white text-center">
+            <img class="card-img" src="images/floodnet.png" />
+            <div class="card-img-overlay" style="background-image:'images/floodnet.png';">
+              <h5 class="card-title" style="text-align: center;">Floodnet: Undergraduate Summer Research Experience</h5>
+              <p class="card-text" style="text-align: center;"> I worked as an Undergraduate Researcher focusing on Data Analytics for anamoly detection in Floodnet. Floodnet is a research project which is building sensor network to tackle flood in New York City.</p>
+              <a class="btn btn-outline-light" href="https://github.com/timsinashok/floodnet_ugsrp-2023">See in Github</a>
             </div>
           </div>
-
-     
-      <div class="text-three">
-        <h4><strong>Language and Tools</strong></h4>
+        </div>
       </div>
-
-    </section>
- 
-
-<hr class="my-5" />
-
-<!--Section: Content-->
-        <section class="text-center" id="Projects">
-          <h4 class="text-two" style="color: white;"><strong>
-            <br>
-            My Projects and Experiences</strong></h4>
-            </section>
-
-<!-- First Row-->
-
-<br>
-<br>
-<div class="container">
-<div class="row">
-  <div class="col-lg-4 col-md-10 mb-4">
-    <div class="card">
-      <div class="card text-white text-center"><img class="card-img"  src="images/floodnet.png"/>
-        <div class="card-img-overlay" style="background-image:'images/floodnet.png';">
-          <h5 class="card-title" style="text-align: center;">Floodnet: Undergraduate Summer Research Experience</h5>
-          <p class="card-text" style="text-align: center;">  
-            I worked as an Undergraduate Researcher focusing on Data Analytics for anamoly detection in Floodnet. Floodnet is a research project which is building
-          sensor network to tackle flood in New York City.</p><a class="btn btn-outline-light"  href="https://github.com/timsinashok/floodnet_ugsrp-2023">See in Github</a>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card text-white text-center">
+            <img class="card-img" style="max-width: 900;" src="images/trashbin.png" />
+            <div class="card-img-overlay">
+              <h4 class="card-title">Online Trashbin Monitroing System</h4>
+              <p class="card-text">I worked with a team for my class Design and Innovation to build a online Trashbin monitoring system usning ultrasonic sensor and an ESP32 board and connecitng them on a home-assistiant dashboard.</p>
+            </div>
+          </div>
         </div>
-      </div>   
-
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-    <div class="card">
-     <div class="card text-white text-center"><img class="card-img" style="max-width: 900;" src="images/trashbin.png"/>
-        <div class="card-img-overlay">
-          <h4 class="card-title">Online Trashbin Monitroing System</h4>
-          <p class="card-text">I worked with a team for my class Design and Innovation to build a online Trashbin monitoring system usning ultrasonic sensor and an ESP32 board and connecitng them on a home-assistiant dashboard.</p>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <div class="card text-white text-center">
+            <img class="card-img" style="max-height: 300;" src="images/seizuredetection.png" />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Project: Seizure Detection</h5>
+              <p class="card-text">IoT project to detect nocturnal seizure in Epilepsy patients. I woked on writing the firmware to detect the seizure first using hardcorded cutoffs but later I collected data from the sensor and trained a machine learning model to classify seizire and non-seizure data </p>
+              <a class="btn btn-outline-light" href="https://github.com/timsinashok/Seizure-detection">See in Github</a>
+            </div>
+          </div>
         </div>
-      </div>  
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
-    <div class="card">
-    
-      <div class="card text-white text-center"><img class="card-img" style="max-height: 300;" src="images/seizuredetection.png"/>
-        <div class="card-img-overlay">
-          <h5 class="card-title">Project: Seizure Detection</h5>
-          <p class="card-text">IoT project to detect nocturnal seizure in Epilepsy patients. I woked on writing the firmware to detect the seizure first using hardcorded cutoffs but later I collected data from the sensor and trained a machine learning model to classify seizire and non-seizure data </p><a class="btn btn-outline-light" href="https://github.com/timsinashok/Seizure-detection">See in Github</a>
-        </div>
-      </div>  
-    
-  </div>
-</div>
-</div>
-<!--Section: Content-->
-
-
-
-
-
-<!-- Card section got from https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers-->
-<!--Card Section-->
-      
-        <!--Section: Content-->
       </div>
     </div>
-    </main>
-    <!--Main layout-->
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <!--Section: Content-->
+    <!-- Card section got from https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers-->
+    <!--Card Section-->
+    <!--Section: Content-->
+  </div>
+  </div>
+  </main>
+  <!--Main layout-->
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 <hr>
-<div style="text-align: center;">
-  Copyright 2023 @ashoktimsina 
-  <br><br>
+<div style="text-align: center;"> Copyright 2023 @ashoktimsina <br>
+  <br>
 </div>
 </html>

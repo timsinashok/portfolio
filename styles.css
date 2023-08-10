@@ -9,13 +9,23 @@ body {
 }
 
 
-
+/*
 .name-detail{
   margin-top: 170px;
   margin-left: 220px;
-  font-family: "Anybody";
+  
   left: 100px ;
   right: 100px;
+  line-height: 1.2;
+}
+*/
+
+.name-detail{
+  font-family: "Anybody";
+  position: relative;
+  margin-left: 20%;
+  margin-top: 170px;  
+  margin-right: 10%;
   line-height: 1.2;
 }
 
@@ -62,17 +72,18 @@ body {
   color: #B57935;
 }
 
+
 .dark-body-info{
-  margin-top: 10px;
-  margin-left: 220px;
+  position: relative;
+    margin-left: 20%;
+    margin-top: 20px;  
+    margin-right: 10%;
 }
 
 .text-three{
-position: relative;
   color: #577399;
-  margin-top: calc(var(--vh, 1vh));
-  margin-left: 1070px;
 }
+
 
 /* for demo purposes */
   
