@@ -25,9 +25,45 @@
     body {
       font-family: "Anybody";
     }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+
+    /* Navbar items underline on hover and when active */
+    .navbar-nav .nav-item a.nav-link:hover,
+    .navbar-nav .nav-item a.nav-link.active {
+      text-decoration: underline;
+      text-decoration-thickness: 5px;
+
+    }
+
+    body {
+      font-family: "Anybody";
+    }
+  </style>
+
   </style>
 </head>
 <body style="background-color: black;">
+  <!-- ... your HTML body ... -->
+  <script>
+    // Add active class to clicked nav item
+    document.addEventListener('DOMContentLoaded', function () {
+      var navLinks = document.querySelectorAll('.navbar-nav .nav-item a.nav-link');
+
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          navLinks.forEach(function (otherLink) {
+            otherLink.classList.remove('active');
+          });
+          link.classList.add('active');
+        });
+      });
+    });
+  </script>
+
+
   <!--Main Navigation-->
   <header>
     <style>
@@ -63,29 +99,44 @@
         color: #fff !important;
       }
     </style>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand nav-link" target="_blank" href="timsinaashok.com.np">
-          <strong>TIMSINASHOK</strong>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#intro">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact-Form" target="_blank">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar -->
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block fixed-top" style="z-index: 2000;">
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand nav-link" target="_blank" href="timsinaashok.com.np">
+      <strong>TIMSINASHOK</strong>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarExample01">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <!-- Set the active class and custom class for the "Home" link -->
+        <li class="nav-item">
+          <a class="nav-link custom-home-link active" aria-current="page" href="#intro">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact-Form" target="_blank">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    /* Add styling for the navbar */
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha (last) value for transparency */
+  }
+  /* Add custom styling for the active and custom-home-link class */
+  .navbar-nav .custom-home-link.active {
+    text-decoration: underline;
+  }
+</style>
+
     <!-- Carousel wrapper -->
     <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
       <!-- Inner -->
