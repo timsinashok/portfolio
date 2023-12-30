@@ -98,6 +98,10 @@
       .navbar .nav-link {
         color: #fff !important;
       }
+      .card-img {
+      height: 300px;
+      object-fit: cover;
+    }
     </style>
 
 
@@ -119,7 +123,7 @@
           <a class="nav-link" href="#Projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Contact-Form" target="_blank">Contact Me</a>
+          <a class="nav-link" href="#Contact-Form">Contact Me</a>
         </li>
       </ul>
     </div>
@@ -187,10 +191,8 @@
   <hr class="my-5" />
   <!--Section: Content-->
   <section class="text-center" id="Projects">
-    <h4 class="text-two" style="color: white;">
-      <strong>
-        <br> My Projects and Experiences </strong>
-    </h4>
+        <h2 style="color: #fff; text-align: center;">My Projects and Experiences</h2>
+
   </section>
   <!-- First Row-->
 
@@ -239,7 +241,86 @@
     <!--Section: Content-->
   </div>
   </div>
-  </main>
+
+<!-- second row -->
+<!-- Second Set of Projects -->
+<div class="container mt-5">
+  <div class="row">
+    <!-- Project Card 4 -->
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="card">
+        <div class="card text-white text-center">
+          <img class="card-img" src="images/access.png" alt="Project 4 Image">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Undergraduate Reseach Intern(Assistiantship), ACCESS LAB, NYUAD</h5>
+            <p class="card-text">I was a part of Arabian Centre for Climate and Environmental Studies Lab at NYUAD where I worked on building sensor boxes using Raspberry pi and off the self sensors for climate studes.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 5 -->
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="card">
+        <div class="card text-white text-center">
+          <img class="card-img" src="images/hci.png" alt="Project 5 Image">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Undergraduate Reseach Intern(Assistiantship), HCI, NYUAD</h5>
+            <p class="card-text">As a part of Human Computer Interaction Lab at NYUAD, I participated in Audiotory EEG Challenge. The focus of my work "match-mismatch" task and I trained CNN and RNN models for classification of EEG data. </p>
+            <a class="btn btn-outline-light" href="https://github.com/timsinashok/auditory-eeg-challenge-2024-code">See in Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 6 -->
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="card">
+        <div class="card text-white text-center">
+          <img class="card-img" src="images/floodnet.png" alt="Project 6 Image">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Project 6 Coming soon</h5>
+            <p class="card-text">Description for Project 6.</p>
+            <a class="btn btn-outline-light" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more project cards as needed -->
+  </div>
+</div>
+
+
+<!-- Section for Contact Me -->
+<section id="Contact-Form" style="padding: 50px 0; background-color: black;">
+  <div class="container">
+    <h2 style="color: #fff; text-align: center;">Contact Me</h2>
+    <form action="#" method="post">
+      <!-- Name input -->
+      <div class="mb-3">
+        <label for="contactName" class="form-label" style="color: #fff;">Your Name</label>
+        <input type="text" class="form-control" id="contactName" name="name" required style="background-color: #333; color: white;">
+      </div>
+
+      <!-- Email input -->
+      <div class="mb-3">
+        <label for="contactEmail" class="form-label" style="color: #fff;">Your Email</label>
+        <input type="email" class="form-control" id="contactEmail" name="email" required style="background-color: #333; color: white;">
+      </div>
+
+      <!-- Message input -->
+      <div class="mb-3">
+        <label for="contactMessage" class="form-label" style="color: #fff;">Your Message</label>
+        <textarea class="form-control" id="contactMessage" name="message" rows="4" required style="background-color: #333; color: white;"></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary" style="color: white;">Submit</button>
+    </form>
+  </div>
+</section>
   <!--Main layout-->
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
