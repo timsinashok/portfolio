@@ -1,18 +1,18 @@
-# My Portfolio Site
+# Portfolio Website
 
-This is my portfolio site built using Bootstrap and the MDB Half-page Carousel template.
+Welcome to my portfolio website! Here, you can explore my projects and learn more about my skills and experiences. The site is crafted using Bootstrap and features the visually appealing MDB Half-page Carousel template.
 
-The website is hosted on a custom domain using GitHub Pages and can be found [here](https://ashoktimsina.com.np/).
+Visit the live site: [My Portfolio](https://ashoktimsina.com.np/)
 
-Feel free to suggest me if you have any suggestions for improving my portfolio website. 
-@timsinashok 
+Your feedback is highly valued! If you have any suggestions for enhancing the user experience or adding new features, feel free to reach out to me on Twitter: [@timsinashok](https://twitter.com/timsinashok).
 
 ## Requirements
 
-[Anybody Font](https://fonts.google.com/specimen/Anybody)
+To run or modify this website, you'll need the following dependencies:
 
-[MDB Half-page Carousel template](https://mdbootstrap.com/freebies/carousel-half-cover/)
+- **Anybody Font**: Used for typography, you can find it [here](https://fonts.google.com/specimen/Anybody).
+- **MDB Half-page Carousel template**: Utilized for the carousel layout, available [here](https://mdbootstrap.com/freebies/carousel-half-cover/).
+- **Bootstrap**: The website is built upon Bootstrap framework, documentation [here](https://getbootstrap.com/docs/5.3/getting-started/introduction/).
 
-[Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-
+Feel free to clone this repository and customize it according to your preferences. Happy coding!
 
